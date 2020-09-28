@@ -43,8 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let dateString = String(date)
         let timeinterval : TimeInterval = (dateString as NSString).doubleValue
         let dateFromServer = NSDate(timeIntervalSince1970:timeinterval)
-        //let dateFormater : DateFormatter = DateFormatter()
-        //dateFormater.dateFormat = "dd-MMM-yyyy"
+
         
         
         cell.titleLabel.text = title
