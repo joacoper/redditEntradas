@@ -39,10 +39,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         let imageURL = dataDictionary["thumbnail"] as! String
         
         
+        let date = dataDictionary["created"] as! Double
+        let dateString = String(date)
+        let timeinterval : TimeInterval = (dateString as NSString).doubleValue
+        let dateFromServer = NSDate(timeIntervalSince1970:timeinterval)
+        let dateFormater : DateFormatter = DateFormatter()
+        dateFormater.dateFormat = "dd-MMM-yyyy"
+        
         
         cell.titleLabel.text = title
         cell.autorLabel.text = autor
         cell.commentsLabel.text = "\(comentarios)"
+        cell.fecha.text = "\(dateFromServer)"
+        
         
         let url = URL(string: imageURL)
         let data = try? Data(contentsOf: url!)

@@ -74,6 +74,15 @@
                                                         <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1st-z1-Tgb">
+                                                    <rect key="frame" x="100" y="109" width="200" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="sY0-LH-b4U"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="2Ng-lJ-uwp" firstAttribute="top" secondItem="6XA-mD-9fn" secondAttribute="topMargin" constant="1" id="4Vf-dR-myz"/>
@@ -81,9 +90,11 @@
                                                 <constraint firstItem="2Ng-lJ-uwp" firstAttribute="leading" secondItem="EQi-In-qkm" secondAttribute="trailing" constant="12" id="FjJ-Tj-jLa"/>
                                                 <constraint firstItem="GPV-IN-m27" firstAttribute="top" secondItem="hgx-kC-hnR" secondAttribute="bottom" constant="5" id="J9H-AM-7AW"/>
                                                 <constraint firstItem="EQi-In-qkm" firstAttribute="leading" secondItem="6XA-mD-9fn" secondAttribute="leading" constant="8" id="JxH-Dd-IHa"/>
+                                                <constraint firstItem="1st-z1-Tgb" firstAttribute="leading" secondItem="EQi-In-qkm" secondAttribute="trailing" constant="12" id="NsV-nT-gRs"/>
                                                 <constraint firstItem="hgx-kC-hnR" firstAttribute="top" secondItem="2Ng-lJ-uwp" secondAttribute="bottom" constant="5" id="T6b-bO-jmP"/>
                                                 <constraint firstItem="GPV-IN-m27" firstAttribute="trailing" secondItem="6XA-mD-9fn" secondAttribute="trailingMargin" id="X1x-zZ-6Ff"/>
                                                 <constraint firstItem="EAF-Tb-wVh" firstAttribute="leading" secondItem="EQi-In-qkm" secondAttribute="trailing" constant="12" id="Yfn-eG-6FK"/>
+                                                <constraint firstItem="1st-z1-Tgb" firstAttribute="top" secondItem="EAF-Tb-wVh" secondAttribute="bottom" constant="30" id="ZNm-dd-nOZ"/>
                                                 <constraint firstItem="2Ng-lJ-uwp" firstAttribute="trailing" secondItem="6XA-mD-9fn" secondAttribute="trailingMargin" id="e8u-NX-6mJ"/>
                                                 <constraint firstItem="hgx-kC-hnR" firstAttribute="trailing" secondItem="6XA-mD-9fn" secondAttribute="trailingMargin" id="e9k-E4-oIY"/>
                                                 <constraint firstItem="EQi-In-qkm" firstAttribute="centerY" secondItem="6XA-mD-9fn" secondAttribute="centerY" id="q1x-kd-TUO"/>
@@ -93,6 +104,7 @@
                                         <connections>
                                             <outlet property="autorLabel" destination="EAF-Tb-wVh" id="4NC-uC-nzJ"/>
                                             <outlet property="commentsLabel" destination="hgx-kC-hnR" id="cVl-CJ-oyv"/>
+                                            <outlet property="fecha" destination="1st-z1-Tgb" id="abd-vN-1Um"/>
                                             <outlet property="subreddit" destination="GPV-IN-m27" id="Fgk-HF-Ytg"/>
                                             <outlet property="thumbnail" destination="EQi-In-qkm" id="Lav-nh-4s8"/>
                                             <outlet property="titleLabel" destination="2Ng-lJ-uwp" id="0OT-qC-O4P"/>

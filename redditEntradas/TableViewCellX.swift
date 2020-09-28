@@ -11,6 +11,8 @@ import UIKit
 class TableViewCellX: UITableViewCell {
     
     
+   
+    @IBOutlet weak var fecha: UILabel!
     
     @IBOutlet weak var thumbnail: UIImageView!
     
